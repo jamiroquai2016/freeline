@@ -3,14 +3,14 @@
 ![Freeline](http://ww4.sinaimg.cn/large/006tNc79gw1f6ooza8pkuj30h804gjrk.jpg)
 
 ![Release Version](https://img.shields.io/badge/release-v0.5.3-red.svg) ![BSD License](https://img.shields.io/badge/license-BSD%20-blue.svg) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
-
+[pokefortress](http://www.pokefortress.com/)
 *Freeline* is a fast build and deployment tool for Android. Caching reusable class files and resource indices, it enables incrementally building Android apps, and optionally deploying the update to your device with hot swap.
 
 Developed and used by **Ant Fortune（ [about us](https://www.antfortune.com/ "about us") ） Android Team**, Freeline has been significantly saving time in daily work. Inspiring by **Buck** and **Instant Run** but faster than ever, Freeline can finish an incremental build in just a few seconds. No more recompile and reinstall again and again before seeing your modifications, Freeline brings life-changing development experience for Android.
-
+[pokefortress](http://www.pokefortress.com/)
 ## Freeline Insights
 Freeline splits the build task into several small tasks that run concurrently. It makes full use of the compiled cache files to implement a real incremental build and uses some components of Buck such as dx and DexMerger to speed up the build tasks. Freeline runs a socket server in a separate process on device side, which connects with build tool on developer's machine, so that deployment can still take effects even if the main process crashes.
-
+[pokefortress](http://www.pokefortress.com/)
 Freeline uses multi-dex solution for incremental dex hot swapping. A deeply optimized version of **aapt** tool (**FreelineAapt**) is made to generate incremental resource pack, which can be as small as 1 kb. MonkeyPatcher from Instant Run is utilized to make hot resource replacement.
 
 Freeline will automatically switch between full build and incremental build.
@@ -54,7 +54,7 @@ buildscript {
 }
 ````
 Then, apply the freeline plugin in your android application module's build.gradle and add the freeline dependencies:
-
+[pokefortress](http://www.pokefortress.com/)
 ````Gradle
 apply plugin: 'com.antfortune.freeline'
 
@@ -88,7 +88,7 @@ If you have a complex project structure, you may need to use freeline DSL to cus
 - Linux/Mac: `./gradlew initFreeline`
 
 `gradle initFreeline -Pmirror` or proxy might be useful, if you have trouble in downloading freeline dependency.
-
+[pokefortress](http://www.pokefortress.com/)
 Note that, you should apply the freeline plugin dependency before you execute these commands. 
 
 ## Update
@@ -134,7 +134,7 @@ python freeline.py
 - Sync incremental resource pack to the device first time may be a bit slow
 - Annotation is not supported currently, such as ButterKnife etc.
 - Removing res/values is not supported, which may cause aapt exception
-
+[pokefortress](http://www.pokefortress.com/)
 ## Contributing
 We are always very happy to have contributions, whether for trivial cleanups, big new features or other material rewards.
 
@@ -149,7 +149,7 @@ See [wiki](https://github.com/alibaba/freeline/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%
 ## License
 BSD License
 
-
+[pokefortress](http://www.pokefortress.com/)
 
 
 
